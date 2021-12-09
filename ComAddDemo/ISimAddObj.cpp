@@ -114,7 +114,7 @@ STDMETHODIMP CISimAddObj::strTest(BSTR str)
 	std::wstring str1 = str;
 	CComBSTR comBSTR = str;
 	 
-	char* lpszText2 = _com_util::ConvertBSTRToString(bstrText);
+	char* lpszText2 = _com_util::ConvertBSTRToString(str);
 
 	return S_OK;
 }
