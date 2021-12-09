@@ -18,6 +18,9 @@ interface IISimAddObj : IDispatch{
 	[id(1)] HRESULT Add([in] LONG num1, LONG num2, [out,retval] LONG* sum);
 	[id(2)] HRESULT Test(void);
 	[id(3)] HRESULT TestVar([in] VARIANT va);
+	[id(4)] HRESULT bufTest([in] VARIANT buf);
+	[id(5)] HRESULT buftest2([out, retval] VARIANT* var);
+	[id(6)] HRESULT strTest([in] BSTR str);
 };
 [
 	uuid(CAEDDE8F-50D3-4856-946A-6FAF2C177499),

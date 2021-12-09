@@ -56,6 +56,9 @@ public:
 	STDMETHOD(Add)(LONG num1, LONG num2, LONG* sum);
 	STDMETHOD(Test)(void);
 	STDMETHOD(TestVar)(VARIANT va);
+	STDMETHOD(bufTest)(VARIANT buf);
+	STDMETHOD(buftest2)(VARIANT* var);
+	STDMETHOD(strTest)(BSTR str);
 };
 
 OBJECT_ENTRY_AUTO(__uuidof(ISimAddObj), CISimAddObj)
